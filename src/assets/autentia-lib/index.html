@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Autentia University Lib</title>
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html"/>
+  <link rel="import" href="lib/elements.html"/>
+</head>
+<body>
+
+  <tnt-toolbar title="Showcase"></tnt-toolbar>
+
+  <tnt-user user='{"login": "Ruben", "avatar": "https://avatars.githubusercontent.com/u/818068?v=3", "admin": true}'></tnt-user>
+
+</body>
+
+  <script>
+    document.addEventListener('select-user', function($event){
+      alert($event.detail)
+    })
+  </script>
+
+</html>

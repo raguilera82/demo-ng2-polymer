@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "autentia-lib",
+        "scope": null,
+        "escapedName": "autentia-lib",
+        "name": "autentia-lib",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/raguilera82/temp/polymerday/search-user/demo-ng2-polymer"
+    ]
+  ],
+  "_from": "autentia-lib@latest",
+  "_id": "autentia-lib@1.4.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/autentia-lib",
+  "_nodeVersion": "6.4.0",
+  "_npmUser": {},
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "autentia-lib",
+    "scope": null,
+    "escapedName": "autentia-lib",
+    "name": "autentia-lib",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "http://localhost:8081/repository/npm-internal/autentia-lib/-/autentia-lib-1.4.0.tgz",
+  "_shasum": "7f2cadfb89e0269600d96c2fd4e96d8eb1160e97",
+  "_shrinkwrap": null,
+  "_spec": "autentia-lib",
+  "_where": "/Users/raguilera82/temp/polymerday/search-user/demo-ng2-polymer",
+  "author": "",
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "live-server": "^1.1.0"
+  },
+  "dist": {
+    "shasum": "7f2cadfb89e0269600d96c2fd4e96d8eb1160e97",
+    "tarball": "http://localhost:8081/repository/npm-internal/autentia-lib/-/autentia-lib-1.4.0.tgz"
+  },
+  "gitHead": "1b0349249d4d3ecfac12a0ae5b1d4a09330d8915",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "autentia-lib",
+  "optionalDependencies": {},
+  "publishConfig": {
+    "registry": "http://localhost:8081/repository/npm-internal/"
+  },
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "bower": "./node_modules/bower/bin/bower",
+    "live": "./node_modules/live-server/live-server.js",
+    "postinstall": "bower install && mv ../autentia-lib/ ../../src/assets/",
+    "pro": "./node_modules/vulcanize/bin/vulcanize lib/elements.html > dist/bundle.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.0"
+}
