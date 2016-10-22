@@ -1,0 +1,41 @@
+
+<dom-module id="tnt-user">
+    <template>
+        <style>
+            :host {
+                display: block;
+                --paper-card-content: {
+                    color: var(--tnt-user-color, red);
+                }
+            }
+        </style>
+        
+        
+        <paper-card image="[[user.avatar]]" on-click="select">
+          <div class="card-content">
+              [[user.login]]
+              [[user.name]]
+              
+              <template is="dom-if" if={{[[user.admin]}}>
+                  
+                  <iron-icon icon="star"></iron-icon>
+                  
+              </template>
+              
+          </div>
+        </paper-card>
+        
+
+    </template>
+    <script>
+        Polymer({
+            is: 'tnt-user',
+            properties: {
+                user: Object
+            },
+            select: function(){
+                this.fire('select-user', this.user);
+            }
+        });
+    </script>
+</dom-module>

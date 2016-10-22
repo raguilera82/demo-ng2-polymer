@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<form>
+  Username: <input type="text" #username>
+  <button (click)="search(username.value)">Search</button>
+</form>
+
+<div *ngIf="user">
+  <tnt-user [user]="user" (select-user)="selectUser($event)"></tnt-user>
+</div>

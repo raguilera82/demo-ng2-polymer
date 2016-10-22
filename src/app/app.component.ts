@@ -1,4 +1,6 @@
+import { UserService } from './user.service';
 import { Component, OnInit } from '@angular/core';
+import { User } from './model/user';
 
 @Component({
   selector: 'app-root',
@@ -6,12 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title;
+  user: User
 
-  constructor() {}
+  constructor(private service:UserService) {}
 
   ngOnInit() {
-    this.title = "Que levante la mano el que piense que habrá efecto demo"
+  }
+
+  search(username: string): void {
+    this.service.searchUser(username)
+    .subscribe(
+      (data) => this.user = data
+    )
+  }
+
+  selectUser($event) {
+    console.log($event.detail.name)
   }
 
 }
